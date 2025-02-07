@@ -12,3 +12,5 @@ app.use(cors());
 app.use(express.json());
 
 app.listen(PORT, console.log(`express app running on port:${PORT}`));
+
+app.get("/home", (req, res) => res.status(200).json({ msg: "Hello World!" }));
